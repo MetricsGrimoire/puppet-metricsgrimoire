@@ -1,0 +1,5 @@
+- RepositoryHandler
+- python-setuptools
+- python-mysqldb
+- mysql-server
+- mysql-client
