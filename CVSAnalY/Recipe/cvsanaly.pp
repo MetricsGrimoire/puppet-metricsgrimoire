@@ -94,7 +94,7 @@ class cvsanaly {
 		path => $path
 	}
 
-<%# 12. Installtion of python-setup-tools (needed for cvsanaly). %>
+<%# 12. Installation of python-setup-tools (needed for cvsanaly). %>
 	package { "python-setuptools":
 		ensure => installed,
 		require => Exec["apt-get update"]
