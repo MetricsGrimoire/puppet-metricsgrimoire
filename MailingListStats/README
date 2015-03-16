@@ -3,7 +3,7 @@
 3. install puppet modules: github (vcsrepo) and mysql (mysql) ---> install in server and client
 4. Recipe/nodes.pp (/etc/puppet/manifests/)
 5. Recipe/site.pp (/etc/puppet/manifests/)
-6. Recipe/cvsanaly.pp (/etc/puppet/modules/cvsanaly/manifests/cvsanaly.pp)
+6. Recipe/mlstats.pp (/etc/puppet/modules/mlstats/manifests/mlstats.pp)
 
 
 - Requirements are in REQUIREMENTS file into Requirements directory
