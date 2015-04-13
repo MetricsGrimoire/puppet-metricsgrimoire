@@ -2,5 +2,6 @@
 
 class { 'metricsgrimoire':
 	include cvsanaly,
-        include mlstats
+        include mlstats,
+        include sibyl
 }
