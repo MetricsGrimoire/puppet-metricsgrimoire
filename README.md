@@ -6,9 +6,12 @@ This module installs MetricsGrimoire tools.
 
 # Quick Start
 
-	class { 'metricsgrimoire':
+	class { 'quick-start':
 		include cvsanaly,
-		include mlstats
+		include mlstats,
+		include sibyl,
+		include bicho,
+		include ircanalysis
 	}
 
 # Configuration
