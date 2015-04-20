@@ -12,9 +12,12 @@ At a Glance
 :Hosts:
  * https://activity.openstack.org/dash/
 :Puppet:
- * :file:`manifests/init.pp`
+ * :file:`manifests/quick-start.pp`
  * :file:`manifests/cvsanaly.pp`
  * :file:`manifests/mlstats.pp`
+ * :file:`manifests/sibyl.pp`
+ * :file:`manifests/bicho.pp`
+ * :file:`manifests/ircanalysis.pp`
 :Projects:
  * https://github.com/MetricsGrimoire
 

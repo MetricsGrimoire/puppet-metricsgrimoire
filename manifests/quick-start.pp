@@ -79,5 +79,9 @@ mysql::db { 'testdb':
 	include mlstats
 # 15. Sibyl tool.
 	include sibyl
+# 16. Bicho tool.
+	include bicho
+# 17. IRCAnalysis tool.
+	include ircanalysis
 
 }
