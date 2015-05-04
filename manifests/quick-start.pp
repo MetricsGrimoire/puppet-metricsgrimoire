@@ -69,15 +69,20 @@ mysql::db { 'testdb':
     ensure  => installed,
     require => Exec['apt-get update'],
   }
-# 13. CVSAnalY tool.
+# 13. Installation of python-sqlalchemy (needed for sibyl).
+  package { 'python-sqlalchemy':
+    ensure  => installed,
+    require => Exec['apt-get update'],
+  }
+# 14. CVSAnalY tool.
   include cvsanaly
-# 14. MailingListStats tool.
+# 15. MailingListStats tool.
   include mlstats
-# 15. Sibyl tool.
+# 16. Sibyl tool.
   include sibyl
-# 16. Bicho tool.
+# 17. Bicho tool.
   include bicho
-# 17. IRCAnalysis tool.
+# 18. IRCAnalysis tool.
   include ircanalysis
 
 }
