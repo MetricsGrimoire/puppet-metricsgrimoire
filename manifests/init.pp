@@ -5,7 +5,7 @@ class quick-start {
 # 1. PATH.
 $path = ['/usr/local/sbin','/usr/local/bin','/usr/sbin','/usr/bin','/sbin','/bin']
 # 2. File .my.cnf (needed to connect to the mysql bbdd without password).
-  exec {'echo \"[client]\nuser=root\nhost=localhost\npassword=\'$mysql_password\'\" > /root/.my.cnf':
+  exec {"echo \"[client]\nuser=root\nhost=localhost\npassword=\'$mysql_password\'\" > /root/.my.cnf":
     user => root,
     path => $path,
   }
