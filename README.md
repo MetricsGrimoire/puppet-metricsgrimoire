@@ -8,13 +8,13 @@ This module installs MetricsGrimoire tools.
 
 This class installs the next tools: CVSAnaly, MLStats, Sibyl, Bicho and IRCAnalysis.
 
-	class { 'quick-start':
-		include cvsanaly,
-		include mlstats,
-		include sibyl,
-		include bicho,
-		include ircanalysis
-	}
+        class { 'quick-start':
+                include cvsanaly,
+                include mlstats,
+                include sibyl,
+                include bicho,
+                include ircanalysis
+        }
 
 # Configuration
 
@@ -24,37 +24,37 @@ The MetricsGrimoire puppet module is separated into individual components which 
 
 This module installs CVSAnalY tool. This tool updates git repositories and run CVSAnalY to update git related information.
 
-	class { 'cvsanaly':
-	}
+        class { 'cvsanaly':
+        }
 
 ## ::MLStats
 
 This module installs MLStats tool. This tool updates mailing lists information system related information.
 
-	class { 'mlstats':
-	}
+        class { 'mlstats':
+        }
 
 ## ::Sibyl
 
 This module installs Sibyl tool. Sibyl retrieves information from the Askbot site of OpenStack at http://ask.openstack.org/. This is later stored in a MySQL database.
 
-	class { 'sibyl':
-	}
+        class { 'sibyl':
+        }
 
 ## ::Bicho
 
 This module installs Bicho tool. This tool is used for several purposes:
 
-- Launchpad tickets retrieval from https://launchpad.net/openstack
-- Gerrit information retrieval from https://review.openstack.org
-- StoryBoard stories retrieval from https://storyboard.openstack.org
+* Launchpad tickets retrieval from https://launchpad.net/openstack
+* Gerrit information retrieval from https://review.openstack.org
+* StoryBoard stories retrieval from https://storyboard.openstack.org
 
-	class { 'bicho':
-	}
+        class { 'bicho':
+        }
 
 ## ::IRCAnalysis
 
 This module installs IRCAnalysis tool. This is a simple Python based script that parses log information. This is retrieved from http://eavesdrop.openstack.org/irclogs/.
 
-	class {'ircanalysis':
-	}
+        class {'ircanalysis':
+        }
