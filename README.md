@@ -44,12 +44,6 @@ This module installs Sibyl tool. Sibyl retrieves information from the Askbot sit
 ## ::Bicho
 
 This module installs Bicho tool. This tool is used for several purposes:
-- Launchpad tickets retrieval from https://launchpad.net/openstack
-
-- Gerrit information retrieval from https://review.openstack.org
-
-- StoryBoard stories retrieval from https://storyboard.openstack.org/
-
 
 	class { 'bicho':
 	}
