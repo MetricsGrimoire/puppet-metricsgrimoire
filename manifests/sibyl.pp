@@ -3,12 +3,7 @@
 class sibyl {
 
 # 1. PATH.
-$path = ['/usr/local/sbin',\
-'/usr/local/bin',\
-'/usr/sbin',\
-'/usr/bin',\
-'/sbin',\
-'/bin']
+$path = ['/usr/local/sbin','/usr/local/bin','/usr/sbin','/usr/bin','/sbin','/bin']
 # 2. A new directory to git clone Sibyl repo is created.
   file { '/home/git/Sibyl':
     ensure => 'directory',
@@ -25,7 +20,7 @@ $path = ['/usr/local/sbin',\
     cwd     => '/home/git/Sibyl',
     command => 'python setup.py install',
     path    => $path,
-    require => [ Package['python-setuptools'], Vcsrepo['/home/git/Sibyl'] ],
+    require => [ Package['python-setuptools'],Vcsrepo['/home/git/Sibyl'] ],
   }
 
 }

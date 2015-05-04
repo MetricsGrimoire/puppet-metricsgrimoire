@@ -3,12 +3,7 @@
 class ircanalysis {
 
 # 1. PATH.
-$path = ['/usr/local/sbin',\
-'/usr/local/bin',\
-'/usr/sbin',\
-'/usr/bin',\
-'/sbin',\
-'/bin']
+$path = ['/usr/local/sbin','/usr/local/bin','/usr/sbin','/usr/bin','/sbin','/bin']
 # 2. A new directory to git clone IRCAnalysis repo is created.
   file { '/home/git/IRCAnalysis':
     ensure => 'directory',
@@ -25,8 +20,7 @@ $path = ['/usr/local/sbin',\
     cwd     => '/home/git/IRCAnalysis',
     command => 'python setup.py install',
     path    => $path,
-    require => [ Package['python-setuptools'],\
-Vcsrepo['/home/git/IRCAnalysis'] ],
+    require => [ Package['python-setuptools'],Vcsrepo['/home/git/IRCAnalysis'] ],
   }
 
 }
