@@ -12,7 +12,7 @@ At a Glance
 :Hosts:
  * https://activity.openstack.org/dash/
 :Puppet:
- * :file:`manifests/quick-start.pp`
+ * :file:`manifests/init.pp`
  * :file:`manifests/cvsanaly.pp`
  * :file:`manifests/mlstats.pp`
  * :file:`manifests/sibyl.pp`
