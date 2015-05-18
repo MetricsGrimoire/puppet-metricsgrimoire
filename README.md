@@ -59,4 +59,4 @@ This module installs IRCAnalysis tool. This is a simple Python based script that
 
 This module installs sortinghat tool. This is a tool to manage identities.
 
-	class { 'sortinghat': }
+        class { 'sortinghat': }
