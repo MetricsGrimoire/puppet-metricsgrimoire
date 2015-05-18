@@ -66,15 +66,27 @@ mysql::db { 'testdb':
     ensure  => installed,
     require => Exec['apt-get update'],
   }
-# 14. CVSAnalY tool.
+# 14. Installation of python-jinja2 (needed for sortinghat).
+  package { 'python-jinja2':
+    ensure  => installed,
+    require => Exec['apt-get update'],
+  }
+# 15. Installation of python-dateutil (needed for sortinghat).
+  package { 'python-dateutil':
+    ensure  => installed,
+    require => Exec['apt-get update'],
+  }
+# 16. CVSAnalY tool.
   include cvsanaly
-# 15. MailingListStats tool.
+# 17. MailingListStats tool.
   include mlstats
-# 16. Sibyl tool.
+# 18. Sibyl tool.
   include sibyl
-# 17. Bicho tool.
+# 19. Bicho tool.
   include bicho
-# 18. IRCAnalysis tool.
+# 20. IRCAnalysis tool.
   include ircanalysis
+# 21. Sortinghat tool.
+  include sortinghat
 
 }

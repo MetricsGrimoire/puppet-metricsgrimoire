@@ -18,6 +18,7 @@ At a Glance
  * :file:`manifests/sibyl.pp`
  * :file:`manifests/bicho.pp`
  * :file:`manifests/ircanalysis.pp`
+ * :file:`manifests/sortinghat.pp`
 :Projects:
  * https://github.com/MetricsGrimoire
 

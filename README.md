@@ -13,7 +13,8 @@ This class installs the next tools: CVSAnaly, MLStats, Sibyl, Bicho and IRCAnaly
                 include mlstats,
                 include sibyl,
                 include bicho,
-                include ircanalysis
+                include ircanalysis,
+                include sortinghat
         }
 
 # Configuration
@@ -53,3 +54,9 @@ This module installs Bicho tool. This tool is used for several purposes:
 This module installs IRCAnalysis tool. This is a simple Python based script that parses log information. This is retrieved from http://eavesdrop.openstack.org/irclogs/.
 
         class { 'ircanalysis': }
+
+## ::Sortinghat
+
+This module installs sortinghat tool. This is a tool to manage identities.
+
+	class { 'sortinghat': }
