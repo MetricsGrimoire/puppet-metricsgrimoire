@@ -76,17 +76,31 @@ mysql::db { 'testdb':
     ensure  => installed,
     require => Exec['apt-get update'],
   }
-# 16. CVSAnalY tool.
+# 16. Directory where tools will be installed
+  file { '/home/git':
+    ensure => 'directory',
+  }
+# 17. Installation of python-requests (needed for sibyl).
+  package { 'python-requests':
+    ensure  => installed,
+    require => Exec['apt-get update'],
+  }
+# 18. Installation of python-beautifulsoup (needed for sibyl).
+  package { 'python-beautifulsoup':
+    ensure  => installed,
+    require => Exec['apt-get update'],
+  }
+# 19. CVSAnalY tool.
   include cvsanaly
-# 17. MailingListStats tool.
+# 20. MailingListStats tool.
   include mlstats
-# 18. Sibyl tool.
+# 21. Sibyl tool.
   include sibyl
-# 19. Bicho tool.
+# 22. Bicho tool.
   include bicho
-# 20. IRCAnalysis tool.
+# 23. IRCAnalysis tool.
   include ircanalysis
-# 21. Sortinghat tool.
+# 24. Sortinghat tool.
   include sortinghat
 
 }

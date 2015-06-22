@@ -3,4 +3,5 @@
 # puppetclient.bitergia.com must be replaced with your node's name
   node 'puppetclient.bitergia.com' {
     include quick-start
+    include automator
   }
