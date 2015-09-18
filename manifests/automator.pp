@@ -72,7 +72,8 @@ $home = '/home/git/Automator/openstack/cache'
 # 9. main.conf
   exec { 'main.conf':
     cwd     => '/home/git/Automator/',
-    command => 'cp /home/dpose/main.conf /home/git/Automator/openstack/conf/',
+    #command => 'cp /home/dpose/main.conf /home/git/Automator/openstack/conf/ && rm /home/git/Automator/openstack/tools/GrimoireLib/vizgrimoire/GrimoireUtils.py && cp /home/dpose/GrimoireUtils.py /home/git/Automator/openstack/tools/GrimoireLib/vizgrimoire/GrimoireUtils.py',
+    command => 'cp /home/git/VizGrimoireUtils/openstack/main.conf /home/git/Automator/openstack/conf/',
     path    => $path,
     require => Exec['launch create projects'],
   }
